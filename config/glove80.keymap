@@ -52,6 +52,16 @@
 #define ______ 0x000000
 #define ___ 0x000000
 
+/ {
+    behaviors {
+        /* This defines the 'ug' label you are using in your layers */
+        ug: rgb_ug_status {
+            compatible = "zmk,behavior-underglow-layer";
+            #binding-cells = <1>;
+        };
+    };
+};
+
 /* Custom Device-tree */
 /* Empty underglow layer definition (for copy-paste)
         mylayer {
