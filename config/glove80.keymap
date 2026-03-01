@@ -46,6 +46,7 @@
 /* Manual Color Definitions */
 #define TEAL   0x008080
 #define ORANGE 0xFFA500
+#define PINK 0xFFC0CB
 #define LIME_GREEN   0x32CD32
 #define FOREST_GREEN 0x228B22
 #define ______ 0x000000
