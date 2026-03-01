@@ -401,6 +401,7 @@
     // CAPPY_HOLDING_TIME defines how long you need to hold (milliseconds)
     // cappy to type CapsLock.  Shorter holds are taps that type CapsWord.
     //
+/*
     #ifndef CAPPY_HOLDING_TIME
     #define CAPPY_HOLDING_TIME 200
     #endif
@@ -414,7 +415,7 @@
         tapping-term-ms = <CAPPY_HOLDING_TIME>;
         #binding-cells = <2>;
         bindings = <&kp>, <&caps_word>;
-    };
+    };*/
 
 /* Automatically generated macro definitions */
 / {
@@ -434,7 +435,7 @@
    &kp F1              &kp F2   &kp F3  &kp F4   &kp F5                         &kp F6   &kp F7   &kp F8   &kp F9    &kp F10
    &kp GRAVE           &kp N1   &kp N2  &kp N3   &kp N4   &kp N5   &kp N6       &kp N7   &kp N8   &kp N9   &kp N0    &kp MINUS
    &kp TAB             &kp Q    &kp W   &kp E    &kp R    &kp T    &kp Y        &kp U    &kp I    &kp O    &kp P     &kp EQUAL
-   &cappy CAPSLOCK 0   &kp A    &kp S   &kp D    &kp F    &kp G    &kp H        &kp J    &kp K    &Rkp L   &kp SEMI  &kp RSHFT
+   &kp CAPS   &kp A    &kp S   &kp D    &kp F    &kp G    &kp H        &kp J    &kp K    &Rkp L   &kp SEMI  &kp RSHFT
    &kp LSHFT           &kp Z    &kp X   &kp C    &kp V    &kp B    &kb DELETE   &kp UP   &kp LALT &lower   &kbLCTRL  &kb ENTER    &kp N    &kp M   &kp COMMA     &kp DOT    &kp LBKT   &kp RBKT
    &magic LAYER_Magic 0 &kp NON_US_BSLH &kp HOME &kp END  &kb INSERT &kb BACKSPACE &kp DOWN &kb ESC &kp LEFT &kp RIGHT &kb SPACE  &kp RALT   &kp PG_UP    &kp FSLH     &kp SQT   &kp BSLH
    >;
