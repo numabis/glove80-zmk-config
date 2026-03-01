@@ -54,8 +54,14 @@
 
 / {
     behaviors {
-        /* This defines the 'ug' label you are using in your layers */
-        ug: rgb_ug_status {
+        /* You already have this one */
+        ug: ug {
+            compatible = "zmk,behavior-underglow-layer";
+            #binding-cells = <1>;
+        };
+
+        /* ADD THIS ONE NOW */
+        ug_cl: ug_cl {
             compatible = "zmk,behavior-underglow-layer";
             #binding-cells = <1>;
         };
