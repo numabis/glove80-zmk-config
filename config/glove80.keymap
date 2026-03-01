@@ -54,16 +54,28 @@
 
 / {
     behaviors {
-        /* You already have this one */
+        /* General underglow color set */
         ug: ug {
             compatible = "zmk,behavior-underglow-layer";
             #binding-cells = <1>;
         };
 
-        /* ADD THIS ONE NOW */
+        /* CapsLock indicator */
         ug_cl: ug_cl {
             compatible = "zmk,behavior-underglow-layer";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
+        };
+
+        /* NumLock indicator - This fixes your current error */
+        ug_nl: ug_nl {
+            compatible = "zmk,behavior-underglow-layer";
+            #binding-cells = <2>;
+        };
+
+        /* ScrollLock indicator - Prevents the next likely error */
+        ug_sl: ug_sl {
+            compatible = "zmk,behavior-underglow-layer";
+            #binding-cells = <2>;
         };
     };
 };
